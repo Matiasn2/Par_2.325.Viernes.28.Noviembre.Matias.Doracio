@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="cine.vista.ButacasController"
+      spacing="15"
+      alignment="CENTER"
+      style="-fx-padding:20;">
+
+    <Label fx:id="lblTitulo" style="-fx-font-size:20px;"/>
+
+    <GridPane fx:id="gridButacas" hgap="10" vgap="10" alignment="CENTER"/>
+
+    <Label fx:id="lblInfo" style="-fx-font-size:14px; -fx-text-fill:gray;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Confirmar compra" onAction="#onConfirmarCompra"/>
+        <Button text="Volver" onAction="#onVolver"/>
+    </HBox>
+
+</VBox>
+
